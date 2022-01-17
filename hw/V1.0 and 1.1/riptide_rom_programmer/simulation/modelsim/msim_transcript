@@ -1,0 +1,409 @@
+# Reading D:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do riptide_rom_programmer_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/toplevel.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:26 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/toplevel.v 
+# -- Compiling module R3_programmer
+# 
+# Top level modules:
+# 	R3_programmer
+# End time: 19:10:26 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer/CPU {E:/riptide_rom_programmer/CPU/shift_merge.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:26 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer/CPU" E:/riptide_rom_programmer/CPU/shift_merge.v 
+# -- Compiling module shift_merge
+# 
+# Top level modules:
+# 	shift_merge
+# End time: 19:10:26 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer/CPU {E:/riptide_rom_programmer/CPU/RIPTIDE-III.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:26 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer/CPU" E:/riptide_rom_programmer/CPU/RIPTIDE-III.v 
+# -- Compiling module RIPTIDE_III
+# 
+# Top level modules:
+# 	RIPTIDE_III
+# End time: 19:10:26 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer/CPU {E:/riptide_rom_programmer/CPU/right_rotate.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:26 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer/CPU" E:/riptide_rom_programmer/CPU/right_rotate.v 
+# -- Compiling module right_rotate
+# 
+# Top level modules:
+# 	right_rotate
+# End time: 19:10:27 on Jan 15,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer/CPU {E:/riptide_rom_programmer/CPU/PC.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:27 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer/CPU" E:/riptide_rom_programmer/CPU/PC.v 
+# -- Compiling module PC
+# ** Warning: E:/riptide_rom_programmer/CPU/PC.v(60): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	PC
+# End time: 19:10:27 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer/CPU {E:/riptide_rom_programmer/CPU/mask_unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:27 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer/CPU" E:/riptide_rom_programmer/CPU/mask_unit.v 
+# -- Compiling module mask_unit
+# 
+# Top level modules:
+# 	mask_unit
+# End time: 19:10:27 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer/CPU {E:/riptide_rom_programmer/CPU/internal_mem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:27 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer/CPU" E:/riptide_rom_programmer/CPU/internal_mem.v 
+# -- Compiling module reg_file
+# -- Compiling module call_stack
+# 
+# Top level modules:
+# 	reg_file
+# 	call_stack
+# End time: 19:10:27 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer/CPU {E:/riptide_rom_programmer/CPU/hazard_unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:27 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer/CPU" E:/riptide_rom_programmer/CPU/hazard_unit.v 
+# -- Compiling module hazard_unit
+# 
+# Top level modules:
+# 	hazard_unit
+# End time: 19:10:27 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer/CPU {E:/riptide_rom_programmer/CPU/decode_unit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:27 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer/CPU" E:/riptide_rom_programmer/CPU/decode_unit.v 
+# -- Compiling module decode_unit
+# 
+# Top level modules:
+# 	decode_unit
+# End time: 19:10:27 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer/CPU {E:/riptide_rom_programmer/CPU/ALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:27 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer/CPU" E:/riptide_rom_programmer/CPU/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 19:10:27 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/data_ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:27 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/data_ram.v 
+# -- Compiling module data_ram
+# 
+# Top level modules:
+# 	data_ram
+# End time: 19:10:27 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/program_rom.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:27 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/program_rom.v 
+# -- Compiling module program_rom
+# 
+# Top level modules:
+# 	program_rom
+# End time: 19:10:27 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/PLL0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:27 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/PLL0.v 
+# -- Compiling module PLL0
+# 
+# Top level modules:
+# 	PLL0
+# End time: 19:10:28 on Jan 15,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer/db {E:/riptide_rom_programmer/db/pll0_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:28 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer/db" E:/riptide_rom_programmer/db/pll0_altpll.v 
+# -- Compiling module PLL0_altpll
+# 
+# Top level modules:
+# 	PLL0_altpll
+# End time: 19:10:28 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/UART.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:28 on Jan 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/UART.sv 
+# -- Compiling module UART
+# 
+# Top level modules:
+# 	UART
+# End time: 19:10:28 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/timer.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:28 on Jan 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/timer.sv 
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# End time: 19:10:28 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/serial.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:28 on Jan 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/serial.sv 
+# -- Compiling module serial
+# -- Compiling module queue_8_8
+# ** Warning: E:/riptide_rom_programmer/serial.sv(113): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: E:/riptide_rom_programmer/serial.sv(118): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	serial
+# End time: 19:10:28 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vlog -sv -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/interrupt_controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:28 on Jan 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/interrupt_controller.sv 
+# -- Compiling module interrupt_controller
+# 
+# Top level modules:
+# 	interrupt_controller
+# End time: 19:10:28 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/I2C_phy.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:28 on Jan 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/I2C_phy.sv 
+# -- Compiling module I2C_phy
+# 
+# Top level modules:
+# 	I2C_phy
+# End time: 19:10:28 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/I2C_ri.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:28 on Jan 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/I2C_ri.sv 
+# -- Compiling module I2C_ri
+# 
+# Top level modules:
+# 	I2C_ri
+# End time: 19:10:28 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/data_ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:28 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/data_ram.v 
+# -- Compiling module data_ram
+# 
+# Top level modules:
+# 	data_ram
+# End time: 19:10:28 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/I2C_phy.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:28 on Jan 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/I2C_phy.sv 
+# -- Compiling module I2C_phy
+# 
+# Top level modules:
+# 	I2C_phy
+# End time: 19:10:29 on Jan 15,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/I2C_ri.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:29 on Jan 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/I2C_ri.sv 
+# -- Compiling module I2C_ri
+# 
+# Top level modules:
+# 	I2C_ri
+# End time: 19:10:29 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/interrupt_controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:29 on Jan 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/interrupt_controller.sv 
+# -- Compiling module interrupt_controller
+# 
+# Top level modules:
+# 	interrupt_controller
+# End time: 19:10:29 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/PLL0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:29 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/PLL0.v 
+# -- Compiling module PLL0
+# 
+# Top level modules:
+# 	PLL0
+# End time: 19:10:29 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/program_rom.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:29 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/program_rom.v 
+# -- Compiling module program_rom
+# 
+# Top level modules:
+# 	program_rom
+# End time: 19:10:29 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/serial.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:29 on Jan 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/serial.sv 
+# -- Compiling module serial
+# -- Compiling module queue_8_8
+# ** Warning: E:/riptide_rom_programmer/serial.sv(113): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: E:/riptide_rom_programmer/serial.sv(118): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	serial
+# End time: 19:10:29 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vlog -sv -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:29 on Jan 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/testbench.sv 
+# -- Compiling module Testbench
+# ** Warning: E:/riptide_rom_programmer/testbench.sv(187): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	Testbench
+# End time: 19:10:29 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vlog -sv -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/timer.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:29 on Jan 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/timer.sv 
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# End time: 19:10:29 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/toplevel.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:29 on Jan 15,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/toplevel.v 
+# -- Compiling module R3_programmer
+# 
+# Top level modules:
+# 	R3_programmer
+# End time: 19:10:29 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/riptide_rom_programmer {E:/riptide_rom_programmer/UART.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:10:29 on Jan 15,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/riptide_rom_programmer" E:/riptide_rom_programmer/UART.sv 
+# -- Compiling module UART
+# 
+# Top level modules:
+# 	UART
+# End time: 19:10:29 on Jan 15,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" Testbench 
+# Start time: 19:10:30 on Jan 15,2022
+# Loading sv_std.std
+# Loading work.Testbench
+# Loading work.R3_programmer
+# Loading work.PLL0
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.program_rom
+# Loading altera_mf_ver.altsyncram
+# Loading work.data_ram
+# Loading work.I2C_ri
+# Loading work.I2C_phy
+# Loading work.serial
+# Loading work.queue_8_8
+# Loading work.UART
+# Loading work.timer
+# Loading work.interrupt_controller
+# Loading work.RIPTIDE_III
+# Loading work.reg_file
+# Loading work.right_rotate
+# Loading work.mask_unit
+# Loading work.ALU
+# Loading work.shift_merge
+# Loading work.PC
+# Loading work.call_stack
+# Loading work.decode_unit
+# Loading work.hazard_unit
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 us
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 90000  Instance: Testbench.PVP_inst.PLL_inst.altpll_component.cycloneiii_pll.pll3
+add wave -position insertpoint  \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/clk_active \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/clk_i2c \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/clk_p1 \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/clk_p2 \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/clk_start \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/clk_stop \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/master_ack \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/read_req \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/read_req_flag \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/ready \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/rx_active \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/rx_done \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/rx_frame \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/slave_ack \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/start_req \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/start_req_flag \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/stop_req \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/stop_req_flag \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/tx_active \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/tx_done \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/tx_frame \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/write_req \
+sim:/Testbench/PVP_inst/i2c_ri_inst/i2c_phy_inst/write_req_flag
+restart
+run
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 90000  Instance: Testbench.PVP_inst.PLL_inst.altpll_component.cycloneiii_pll.pll3
+# End time: 19:33:06 on Jan 15,2022, Elapsed time: 0:22:36
+# Errors: 0, Warnings: 0

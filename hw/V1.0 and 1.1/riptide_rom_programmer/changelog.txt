@@ -1,0 +1,14 @@
+Revision 1:
+Created new Quartus project (18.1)
+Copied RIPTIDE-III validation platform files.
+Removed cache controllers.
+Created new ROM and RAM memory modules.
+Removed graphics module.
+Removed keyboard module.
+Removed MSC module.
+Created testbench.
+Fixed multiple bugs in I2C_phy and I2C_ri modules.
+Fixed multiple bugs in the software (riptide_rom_programmer.asm part).
+Fixed bug in I2C_phy that caused incorrect slave ACK output.
+Fixed bug in software (asm part) that caused incorrect block size calculation.
+Fixed bug in software (asm part) that caused incorrect data addresses for I2C device.

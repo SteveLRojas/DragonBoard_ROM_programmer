@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LED[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LED[3]",
+					"strict" : false
+				},
+				{
+					"name" : "TXD",
+					"strict" : false
+				},
+				{
+					"name" : "i2c_sda",
+					"strict" : false
+				},
+				{
+					"name" : "i2c_scl",
+					"strict" : false
+				},
+				{
+					"name" : "RXD",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "button[0]",
+					"strict" : false
+				},
+				{
+					"name" : "button[2]",
+					"strict" : false
+				},
+				{
+					"name" : "button[3]",
+					"strict" : false
+				},
+				{
+					"name" : "button[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
