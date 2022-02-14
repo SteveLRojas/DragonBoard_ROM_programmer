@@ -47,7 +47,7 @@ def parseCommand(cleanCommandString):
 # Command Helpers  #
 
 
-def readTarget(serialObj):
+def readTarget(serialObj, maxReadSize=None):
 	# Ping w/ $AA55
 	packetPing = bytes.fromhex(HS_PINGREQ)
 	serialObj.write(packetPing)
@@ -55,23 +55,27 @@ def readTarget(serialObj):
 	# Expect $55AA Size[3] back
 	res = serialObj.read(PING_RESPONSE_SIZE)
 	resHexString = ''.join(format(x, '02X') for x in res)
-	print(resHexString)
+	#print(resHexString)
 	if (resHexString != HS_PINGRES):
 		if (resHexString == "0000"):	#if we get an error response (size response with value 0)
 			res = serialObj.read(1)	#read the last size response byte
-			return readTarget(serialObj)	#try again
+			return readTarget(serialObj, maxReadSize)	#try again
 		else:
 			print ("Invalid handshake response from target! Exiting...")
 			exit(1)
 
 	res = serialObj.read(SIZE_RESPONSE_SIZE)
+	amtToRead = int.from_bytes(res, byteorder='big', signed=False)
+	if (maxReadSize is not None and (maxReadSize < amtToRead)):
+			amtToRead = maxReadSize
+			print ("Limiting amtToRead to: " + str(amtToRead))
+	amtToRead = amtToRead.to_bytes(3, 'big')
 
 	# Send READ Command
 	serialObj.write(bytes.fromhex(HS_READ_CMD))
-	serialObj.write(res)
+	serialObj.write(amtToRead)
 	readCmdRes = serialObj.read(READ_CMD_RESPONSE_SIZE) 
 	readSize = int.from_bytes(readCmdRes, byteorder='big', signed=False)
-	print ("readSize: " + str(readSize))
 
 	# Read data from Target and write to file
 	serialObj.timeout = 100
@@ -85,7 +89,7 @@ def handleRead(serialObj, fileName):
 
 	data = readTarget(serialObj)
 
-	print(len(data))
+	#print(len(data))
 	file.write(data)
 	file.close()
 
@@ -101,7 +105,7 @@ def handleWrite(serialObj, fileName):
 	# Expect $55AA Size[3] back
 	res = serialObj.read(PING_RESPONSE_SIZE)
 	resHexString = ''.join(format(x, '02X') for x in res)
-	print(resHexString)
+	#print(resHexString)
 	if (resHexString != HS_PINGRES):
 		if (resHexString == "0000"):	#if we get an error response (size response with value 0)
 			res = serialObj.read(1)	#read the last size response byte
@@ -126,7 +130,7 @@ def handleWrite(serialObj, fileName):
 		serialObj.timeout = 10
 		res = serialObj.read(WRITE_CMD_RESPONSE_SIZE)
 		block_size = int.from_bytes(res, byteorder='big', signed=False)
-		print(block_size)
+		#print(block_size)
 		if (block_size == 0):
 			print("Error transfering data!")
 			exit(1)
@@ -137,15 +141,16 @@ def handleWrite(serialObj, fileName):
 	serialObj.timeout = 10
 	res = serialObj.read(WRITE_CMD_RESPONSE_SIZE)
 	resHexString = ''.join(format(x, '02X') for x in res)
-	print(resHexString)
+	#print(resHexString)
 	file.close()
 
 def handleVerify(serialObj, fileName):
 	file = open(fileName,"rb")
 	refData = bytes(file.read())
 	refDataLen = len(refData)
+	#print("refDataLen: " + str(refDataLen))
 
-	targetData = readTarget(serialObj)
+	targetData = readTarget(serialObj, refDataLen)
 	print("Target data matches reference file? -- " + str(targetData == refData).upper())
 
 	file.close()
